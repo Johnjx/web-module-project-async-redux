@@ -7,7 +7,7 @@ const mainInfo = (mainInfoState = {}, action) => {
     switch (action.type) {
         case types.GET_INFO: {
             const infoFromServer = action.payload
-            return console.log(infoFromServer)
+            return infoFromServer
         }
         default:
             return mainInfoState

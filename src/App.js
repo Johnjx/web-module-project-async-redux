@@ -2,9 +2,10 @@ import React, { useEffect } from 'react';
 import './App.css';
 import { connect } from 'react-redux';
 import * as actions from './state/action-creators'
+import Classes from './components/Classes';
 
 function App(props) {
-  const { count } = props
+  const { classes } = props
 
   useEffect(() => {
     props.fetchGeneralInfo()
@@ -13,8 +14,15 @@ function App(props) {
   return (
     <div className="App">
       <h1>Async Redux Project - Hearthstone Wiki</h1>
+      {classes && <Classes classes={classes}/>}
     </div>
   );
 }
 
-export default connect(st => st, actions)(App)
+const mapStateToProps = state => {
+  return {
+    classes: state.mainInfo.classes
+  }
+}
+
+export default connect(mapStateToProps, actions)(App)
