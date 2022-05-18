@@ -14,6 +14,18 @@ const mainInfo = (mainInfoState = {}, action) => {
     }
 }
 
+const classCards = (classCardsState = [], action) => {
+    switch(action.type) {
+        case types.GET_CLASS_CARDS: {
+            const cardsFromServer = action.payload
+            return cardsFromServer
+        }
+        default:
+            return classCardsState
+    }
+}
+
 export default combineReducers({
     mainInfo,
+    classCards,
 })
