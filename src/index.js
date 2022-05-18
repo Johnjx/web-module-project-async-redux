@@ -6,11 +6,7 @@ import thunk from 'redux-thunk';
 
 import App from './App';
 import './index.css';
-
-const initialState = { count: 0 }
-function reducer(state = initialState, action) {
-  return state
-}
+import reducer from './state/reducer'
 
 let store
 export const resetStore = () => {
