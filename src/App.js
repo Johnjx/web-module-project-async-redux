@@ -36,7 +36,7 @@ const mapStateToProps = state => {
       patch: state.mainInfo.patch,
     },
     classes: state.mainInfo.classes,
-    classCards: state.classCards[0]
+    classCards: state.classCards
   }
 }
 
