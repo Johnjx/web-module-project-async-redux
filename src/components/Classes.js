@@ -6,7 +6,7 @@ const Classes = ({ classes, handleClassCards }) => {
             <h2>Classes</h2>
             <section className="classSection">
                 {classes.map((type, idx) => (
-                    <span key={idx} className={`span${idx}`} onClick={() => handleClassCards()}>{type}</span>
+                    <span key={idx} className={`span${idx}`} onClick={() => handleClassCards(type)}>{type}</span>
                 ))}
             </section>
         </div>

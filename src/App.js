@@ -15,14 +15,14 @@ function App(props) {
   }, [])
 
   
-const handleClassCards = () => {
-  props.fetchClassCards()
+const handleClassCards = (name) => {
+  props.fetchClassCards(name)
 }
 
 
   return (
     <div className="App">
-      <h1>Async Redux Project - Hearthstone Wiki</h1>
+      <h1>Async Redux - Hearthstone Card Wiki</h1>
       {info && <Info info={info}/>}
       {classes && <Classes classes={classes} handleClassCards={handleClassCards}/>}
       {props.classCards && <ClassCards classCards={props.classCards}/>}
