@@ -16,5 +16,4 @@ const ClassCards = ({ classCards }) => {
     )  
 }
 
-
 export default ClassCards

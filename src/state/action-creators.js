@@ -1,23 +1,15 @@
 import * as types from "./action-types"
 import axios from "axios";
+import API_KEY from "../constants/constants";
 
 const info = {
     method: 'GET',
     url: 'https://omgvamp-hearthstone-v1.p.rapidapi.com/info',
     headers: {
       'X-RapidAPI-Host': 'omgvamp-hearthstone-v1.p.rapidapi.com',
-      'X-RapidAPI-Key': '9fd65bd146mshe4cb4ebeb3d9767p113054jsnf5dbadfcfd50'
+      'X-RapidAPI-Key': API_KEY
     }
   };
-
-//   const options = {
-//     method: 'GET',
-//     url: 'https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/classes/hunter',
-//     headers: {
-//       'X-RapidAPI-Host': 'omgvamp-hearthstone-v1.p.rapidapi.com',
-//       'X-RapidAPI-Key': '9fd65bd146mshe4cb4ebeb3d9767p113054jsnf5dbadfcfd50'
-//     }
-//   };
 
 const URL = "https://omgvamp-hearthstone-v1.p.rapidapi.com/cards/classes"
 
@@ -37,7 +29,7 @@ export const fetchClassCards = (name) => dispatch => {
         url: `${URL}/${name}`,
         headers: {
           'X-RapidAPI-Host': 'omgvamp-hearthstone-v1.p.rapidapi.com',
-          'X-RapidAPI-Key': '9fd65bd146mshe4cb4ebeb3d9767p113054jsnf5dbadfcfd50'
+          'X-RapidAPI-Key': API_KEY
         }
       })
     .then(res => {

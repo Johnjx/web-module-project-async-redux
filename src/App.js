@@ -13,12 +13,10 @@ function App(props) {
   useEffect(() => {
     props.fetchGeneralInfo()
   }, [])
-
-  
+ 
 const handleClassCards = (name) => {
   props.fetchClassCards(name)
 }
-
 
   return (
     <div className="App">

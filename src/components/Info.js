@@ -8,5 +8,4 @@ const Info = ({ info }) => {
     )  
 }
 
-
 export default Info

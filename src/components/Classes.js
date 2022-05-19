@@ -13,5 +13,4 @@ const Classes = ({ classes, handleClassCards }) => {
     )  
 }
 
-
 export default Classes
