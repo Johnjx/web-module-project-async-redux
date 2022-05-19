@@ -1,3 +1,85 @@
+h2 {
+  padding: 1%;
+  font-size: 2.5rem;
+}
+span {
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 1px solid black;
+  color: white;
+}
+
+span:hover {
+  cursor: pointer;
+}
+
+.classSection {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.span0 {
+  background-color: #C41E3A;
+}
+
+.span1 {
+  background-color: #FF7C0A;
+}
+
+.span2 {
+  background-color: #AAD372;
+}
+
+.span3 {
+  background-color: #3FC7EB;
+}
+
+.span4 {
+  background-color: #F48CBA;
+}
+
+.span5 {
+  background-color: #FFFFFF;
+  color: black
+}
+
+.span6 {
+  background-color: #FFF468;
+  color: black
+}
+
+.span7 {
+  background-color: #0070DD;
+}
+
+.span8 {
+  background-color: #8788EE;
+}
+
+.span9 {
+  background-color: #C69B6D;
+}
+
+.span10 {
+  background-color: lemonchiffon;
+  color: black
+}
+
+.span11 {
+  background-color: tomato;
+}
+
+.span12 {
+  background-color: aqua;
+  color: black
+}
+
+.span13 {
+  background-color: #A330C9;
+}
+
+
 .App {
   text-align: center;
 }
@@ -36,3 +118,5 @@
     transform: rotate(360deg);
   }
 }
+
+
